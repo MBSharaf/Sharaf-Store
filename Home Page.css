@@ -1,0 +1,154 @@
+*{
+    padding: 0%;
+    margin: 0%
+    
+}
+
+body{
+    background: linear-gradient(#020230, #0b0b29);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+body::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #3eb3e9;
+    opacity: 50%;
+    position: absolute;
+    clip-path:circle(40% at right 70%);
+    z-index: -1;
+}
+
+
+.containr{
+    width: 100%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.containr .login{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60%;
+    left: 33%;
+    
+
+}
+input{
+    font-size: 20px;
+    background: #020230;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+    color: #fff;
+}
+.containr .login a{
+    color: #020230;
+    text-decoration: none;
+    font-size: 40px;
+    position: absolute;
+    top: 100%;
+    left: 33%;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.containr .login a:hover{
+    background: #fff;
+    font-size: 60px;
+    position: absolute;
+    top: 100%;
+    left: 15%;
+    border-radius: 30px;
+    transition: 0.5s
+}
+
+.containr .login a:hover::after{
+    transition: 0.5s;
+}
+.content img{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 500px;
+    width: 40%;
+}
+
+.containr .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 400px;
+    
+}
+.containr .Logo h1{
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    padding: 0px;
+    margin: 0;
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.containr .Logo h1:hover{
+    color: #020230;
+    background: #fff;
+    border-radius: 20px;
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+.containr .login h1:hover::after{
+    transition: 0.5s;
+}
+
+.content .img{
+    width: 40%;
+}
+
+.content img{
+    width: 300px;
+}
+
+@media (min-width:950px) and ( max-width:1150px){
+    .content img{
+        width: 300px;
+        left: 100px;
+    }
+}
+@media (max-width:950px){
+    .content img{
+        width: 250px;
+        left: 100px;
+        top: 50px;
+    }
+    
+    .containr .Logo h1{
+            top: 20px;
+            left: 90px;
+    }
+
+    body::after{ clip-path:circle(40% at bottom)
+        
+    }
+    .containr .login{
+        width: 250px;
+        left: 100px;
+        top: 450px;
+    }
+
+}
